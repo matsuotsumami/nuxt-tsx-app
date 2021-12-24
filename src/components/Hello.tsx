@@ -1,7 +1,16 @@
-interface Props {
-  text: string
-}
-
-export default (props: Props) => (
-  <h1>{props.text}</h1>
-)
+export default defineComponent({
+  props: {
+    text: {
+      type: String,
+      ddefault: null,
+    }
+  },
+  setup(props) {
+    return { text: props.text }
+  },
+  render() {
+    return (
+      <h1>{this.text}</h1>
+    )
+  }
+});

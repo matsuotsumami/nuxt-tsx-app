@@ -8,4 +8,5 @@
   "sourceMap": true,
   "noEmit": true,
   "experimentalDecorators": true,
+  "strict": true,
 }
